@@ -2,7 +2,8 @@
 
 var request = require('request');
 var fs = require('fs');
-var tabletop = require('tabletop');
+// var tabletop = require('tabletop');
+var papaparse = require('papaparse');
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1ccdoL4b3sxboLIj-BkOCjfRJMLVcDQcwtlv8fFCLoxQ/edit?usp=sharing';
 
 var current_branch = 'gh-pages';
@@ -67,9 +68,15 @@ module.exports = function(grunt) {
 
   // Default task.
     grunt.registerTask('UpdateData', 'Va a buscar las cosas a google docs y las deja en un json', function() {
+      console.log("log1")
         var done = this.async();
-        function showInfo(data, tabletop){console.log(tabletop.models.promesas.elements)}
-        var i = tabletop.init({key: public_spreadsheet_url, callback: function(data, tabletop){
+      console.log("log2")
+//        function showInfo(data, tabletop){console.log(tabletop.models.promesas.elements)}
+        console.log("log3")
+        // var i = tabletop.init({key: public_spreadsheet_url, callback: function(data, tabletop){
+        var i = papaparse.parse(public_spreadsheet_url,{complete: function(results){
+          console.log("log4")
+          console.log(results.data)
             var all_promises = tabletop.models.promesas.elements;
             var totales = []
 
@@ -140,7 +147,7 @@ module.exports = function(grunt) {
 
             done()
         }
-        , simpleSheet: true})
+        , download: true, header: true})
 
 
     });
