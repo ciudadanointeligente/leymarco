@@ -4,7 +4,9 @@ var request = require('request');
 var fs = require('fs');
 // var tabletop = require('tabletop');
 var papaparse = require('papaparse');
-var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1ccdoL4b3sxboLIj-BkOCjfRJMLVcDQcwtlv8fFCLoxQ/edit?usp=sharing';
+var public_spreadsheet_url = '/home/Felipe/Descargas/ejemplo.csv';
+// var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1ccdoL4b3sxboLIj-BkOCjfRJMLVcDQcwtlv8fFCLoxQ/edit?usp=sharing';
+// var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR9m-_WZjM9_jM8nXK0EPxnUaSlugsIQ65N2faj5KmcHLa1_EFyfMncBL4TwmDjcU4d_fvVI1AS0wqD/pub?gid=1823583981&single=true&output=csv';
 
 var current_branch = 'gh-pages';
 
@@ -72,12 +74,13 @@ module.exports = function(grunt) {
         var done = this.async();
       console.log("log2")
 //        function showInfo(data, tabletop){console.log(tabletop.models.promesas.elements)}
+console.log(papaparse)
         console.log("log3")
         // var i = tabletop.init({key: public_spreadsheet_url, callback: function(data, tabletop){
-        var i = papaparse.parse(public_spreadsheet_url,{complete: function(results){
+        papaparse.parse(public_spreadsheet_url,{complete: function(results){
           console.log("log4")
-          console.log(results.data)
-            var all_promises = tabletop.models.promesas.elements;
+          console.log(results)
+            var all_promises = []
             var totales = []
 
             /**
@@ -147,8 +150,8 @@ module.exports = function(grunt) {
 
             done()
         }
-        , download: true, header: true})
-
+        , download: false, header: true})
+console.log("nada")
 
     });
     grunt.registerTask("UpdateEverything", ['UpdateData', 'gitadd', 'gitcommit', 'gitpull', 'gitpush'])
