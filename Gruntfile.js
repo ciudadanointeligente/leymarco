@@ -4,7 +4,10 @@ var request = require('request');
 var fs = require('fs');
 // var tabletop = require('tabletop');
 var papaparse = require('papaparse');
-var file = '/home/Felipe/Descargas/ejemplo.csv';
+// File URL
+var file = './Infancia.csv';
+var content = fs.readFileSync(file, "utf8");
+// var file = 'https://docs.google.com/spreadsheets/d/1osA88sQDYy6Q-Aw4oNbyYaMbAnQAI6t66Iv_6GLRNvA/edit?usp=sharing';
 // var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1ccdoL4b3sxboLIj-BkOCjfRJMLVcDQcwtlv8fFCLoxQ/edit?usp=sharing';
 // var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR9m-_WZjM9_jM8nXK0EPxnUaSlugsIQ65N2faj5KmcHLa1_EFyfMncBL4TwmDjcU4d_fvVI1AS0wqD/pub?gid=1823583981&single=true&output=csv';
 
@@ -78,9 +81,10 @@ module.exports = function(grunt) {
 console.log(papaparse)
         console.log("log3")
         // var i = tabletop.init({key: public_spreadsheet_url, callback: function(data, tabletop){
-        papaparse.parse(file,{complete: function(results){
+        papaparse.parse(content,{complete: function(results){
           console.log("log4")
           console.log(results)
+          // data = results.data;
              var all_promises = []
              var totales = []
 
