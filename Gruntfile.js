@@ -81,11 +81,11 @@ module.exports = function(grunt) {
 console.log(papaparse)
         console.log("log3")
         // var i = tabletop.init({key: public_spreadsheet_url, callback: function(data, tabletop){
-        papaparse.parse(content,{complete: function(results){
+        var i = papaparse.parse(content,{complete: function(results){
           console.log("log4")
           console.log(results)
-          // data = results.data;
-             var all_promises = []
+             data = results.data;
+             var all_promises = data;
              var totales = []
 
             /**
