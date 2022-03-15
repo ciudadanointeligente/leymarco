@@ -131,11 +131,11 @@ console.log(papaparse)
             Get Categories and promises
             **/
             var macro_areas = []
-            var data = all_promises
+            var datas = all_promises
             var macro_categories = {};
             var data_categories = {};
-            for(var i=0; i < data.length; i ++){
-                var promise = data[i];
+            for(var i=0; i < datas.length; i ++){
+                var promise = datas[i];
                 if(Object.keys(macro_categories).indexOf(promise.macro_area) == -1){
                     macro_categories[promise.macro_area] = []
                 }
@@ -155,8 +155,9 @@ console.log(papaparse)
 
             done()
         }
-        , download: false, header: true})
+        , download: false, header: true, delimiter: ",", skipEmptyLines: true})
 console.log("nada")
+
 
     });
     grunt.registerTask("UpdateEverything", ['UpdateData', 'gitadd', 'gitcommit', 'gitpull', 'gitpush'])
