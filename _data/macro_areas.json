@@ -1,20 +1,14 @@
 [
     {
         "id": 0,
-        "macro_area": "Protección Universal",
-        "quality_macro_area": "3.432",
-        "fulfillment_macro_area": 64.6
+        "macro_area": "Principios, derechos y garantías de NNA",
+        "quality_macro_area": "5.295",
+        "fulfillment_macro_area": 41
     },
     {
         "id": 1,
-        "macro_area": "Protección a niños, niñas y adolescentes en riesgo de vulneración de derechos",
-        "quality_macro_area": "3.05",
-        "fulfillment_macro_area": 54.6
-    },
-    {
-        "id": 2,
-        "macro_area": "Protección y restitución de derechos a niños, niñas y adolescentes que han sido vulnerados",
-        "quality_macro_area": "3.05",
-        "fulfillment_macro_area": 54.6
+        "macro_area": "Órganos institucionales",
+        "quality_macro_area": "5.444",
+        "fulfillment_macro_area": 40
     }
 ]
