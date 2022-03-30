@@ -1,36 +1,98 @@
 {
-    "Principios, derechos y garantías de NNA": [
+    "Protección Universal": [
         {
-            "category": "Reconocimiento constitucional de Niños, Niñas y Adolescentes"
+            "category": "Fortalecimiento y apoyo a las familias y relevar el rol de la comunidad"
         },
         {
-            "category": "Rol del Estado, familia y sociedad respecto a la niñez"
+            "category": "Principio de no violencia a los niños y niñas"
         },
         {
-            "category": "Principios de actuación del Estado con NNA"
+            "category": "Ley de garantías de los derechos de la niñez"
         },
         {
-            "category": "Garantías de los derechos de NNA y mecanismos de priorización"
+            "category": "Articulación territorial"
         },
         {
-            "category": "Institucionalidad de NNA y sus sistemas"
+            "category": "Participación de niños, niñas y adolescentes"
         },
         {
-            "category": "Derecho de sufragio de NNA"
+            "category": "Educación"
         },
         {
-            "category": "Derecho a un ambiente familiar"
+            "category": "Salud"
         },
         {
-            "category": "Erradicación violencia hacia NNA"
-        },
-        {
-            "category": "Poderes del Estado y Municipalidades con enfoque de derecho y participación de NNA"
+            "category": "Sistema de información"
         }
     ],
-    "Órganos institucionales": [
+    "Protección a niños, niñas y adolescentes en riesgo de vulneración de derechos": [
         {
-            "category": "Poderes del Estado y Municipalidades con enfoque de derecho y participación de NNA"
+            "category": "Prevención del abuso sexual infantil"
+        },
+        {
+            "category": "Necesidad sistema de prevención y alerta temprana"
+        },
+        {
+            "category": "Reinserción educativa"
+        },
+        {
+            "category": "Consumo problemático de alcohol y drogas"
+        }
+    ],
+    "Protección y restitución de derechos a niños, niñas y adolescentes que han sido vulnerados": [
+        {
+            "category": "Nuevo trato con Poder Judicial"
+        },
+        {
+            "category": "Nueva institucionalidad para la infancia"
+        },
+        {
+            "category": "Representación jurídica"
+        },
+        {
+            "category": "Familias de acogida"
+        },
+        {
+            "category": "Programas ambulatorios"
+        },
+        {
+            "category": "Mejorar el cuidado residencial"
+        },
+        {
+            "category": "Financiamiento al sistema de cuidado alternativo"
+        },
+        {
+            "category": "Adopción"
+        },
+        {
+            "category": "Inimputables"
+        },
+        {
+            "category": "Cambios y mejoras en Sename actual"
+        },
+        {
+            "category": "Cuidado residencial para personas con discapacidad en situación de dependencia"
+        },
+        {
+            "category": "Programa de apoyo integral de inserción adolescente para niños, niñas y adolescentes que egresan a la vida independiente"
+        },
+        {
+            "category": "Propuestas a integrar en el PDL que crea el Servicio de Protección Especializada"
+        },
+        {
+            "category": "Propuestas a integrar en el PDL Servicio de Reinserción Juvenil"
+        },
+        {
+            "category": "Apoyo a las familias para promover la reunificación familiar"
+        },
+        {
+            "category": "Niños y niñas en situación de calle"
+        },
+        {
+            "category": "Salud mental"
+        },
+        {
+            "category": "Acompañamiento al Acuerdo Nacional por la Infancia"
         }
     ]
 }
