@@ -1,6 +1,6 @@
-# Niñez Constituye
+# Repositorio de Niñez Constituye
 
-Repositorio de Niñez Xonstituye, un proyecto de Fundación Para la Confianza junto a Ciudadanía Inteligente 
+Repositorio de Niñez Xonstituye, un proyecto de Fundación Para la Confianza junto a Ciudadanía Inteligente
 
 ## Sitio en Jekyll
 
