@@ -4,7 +4,7 @@ email: vigilantesporlainfancia@gmail.com
 description: 'Niñez Constituye es un proyecto de seguimiento...'
 baseurl: '//ninezconstituye.cl/' # the subpath of your site, e.g. /blog/
 url: 'http://ninezconstituye.cl' # the base hostname & protocol for your site
-# analytics: 'UA-102841648-2' # google analytics tracking code
+analytics: 'G-ES8KVYN4W6' # google analytics tracking code
 launched: true
 # build settings
 markdown: kramdown
