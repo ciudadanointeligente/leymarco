@@ -1196,3 +1196,536 @@ label input {
 @media  only  screen  and (min-width: 900px)  {
 .dataviz-mobile,  .dataviz-tablet {
 display:  none;}}
+
+
+
+#fulfillment .ct-series-b .ct-slice-donut {
+    stroke: #D500F9;
+}
+
+/*Niñez Constituye*/
+
+/*header*/
+.header-menu.sticky{
+  background: white;
+  box-shadow: 0px 0px 8px 0.5px rgba(0,0,0,0.09);
+}
+
+.sticky .brand {
+    background: url(../img/logo-niñezconstituye.png) no-repeat!important;
+    width: 102.36px;
+    height: 45px;
+}
+
+.navbar-right {
+    margin-top: 4px;
+}
+
+.navbar-default .navbar-nav > li{
+    border-bottom: 4px solid transparent;
+    margin: 0px 16px;
+    transition: 0.4s all;
+}
+
+.navbar-default .navbar-nav > li:hover {
+    border-bottom: 4px solid #36C6E6;
+}
+
+.sticky .navbar-nav > li > a {
+    color: black!important;
+    padding: 6px 0px;
+    margin: 0px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: black;
+    border-bottom: 0px!important;
+}
+
+/*Home*/
+
+/*Banner principal*/
+
+#welcome{
+  padding-top: 67px;
+}
+
+.jumbotron {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    height: 500px;
+    padding-top: 170px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background-image: url(../img/banner-niñez-constituye.jpg);
+    background-size: cover;
+}
+
+.jumbotron .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jumbotron h2{
+    color: white!important;
+    text-align: center!important;
+    font-size: 2.2em!important;
+    margin-bottom: 35px;
+}
+
+.jumbotron .btn-primary {
+    background: black!important;
+}
+
+.jumbotron .btn-primary:hover {
+    background: #D500F9!important;
+    transition: 0.5s all;
+}
+
+/*Descripción proyecto en home*/
+
+#about {
+    min-height: 360px;
+}
+
+.bajada{
+  padding: 110px 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*Cumplimiento, visualización en el home*/
+
+#summary {
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background-image: url(../img/bg-home-niñez.jpg);
+    background-size: cover;
+    height: 405px;
+}
+
+
+#summary .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%!important;
+}
+
+#summary .title-summary h2{
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+#summary .ct-series-b .ct-slice-donut {
+    stroke: #D500F9;
+}
+
+#summary .mark-summary .text-center.ct-label.white {
+    font-size: 75px;
+}
+
+#summary .mark-summary .notatotal {
+    padding-top: 10px;
+}
+
+
+/*Avance graficos home*/
+
+#summary-graphs {
+    margin-top: 100px;
+}
+
+#summary-graphs h2.title-summary-graphs{
+  margin-bottom: 50px;
+}
+
+#summary-graphs p.donut a{
+    transition: 0.4s all;
+}
+
+#summary-graphs p.donut a:hover {
+    color: #36C6E6;
+}
+
+#summary-graphs .col-graph{
+  height: auto!important;
+}
+
+
+#summary-graphs .ct-series-b .ct-slice-donut {
+    stroke: #D500F9;
+}
+
+#summary-graphs h2.text-center.note{
+  color: #36C6E6;
+}
+
+/*Secciones internas*/
+
+.bg-decoration{
+  height: 193px;
+  width: 100%;
+  background: #36C6E6;
+}
+
+#page-style{
+  background: #E7E8FF;
+}
+
+
+#description {
+    background: #E7E8FF;
+    padding: 70px 0px;
+    position: relative;
+    top: -60px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#description .row {
+    padding: 0% 5%;
+}
+
+#description h1{
+  margin: 0px;
+  padding-bottom: 30px!important;
+}
+
+#description p{
+   margin-bottom: 10px!important;
+}
+
+#description .enlace{
+  color: #D500F9;
+}
+
+
+/*Metodología*/
+.enlaces-metodologia .row div {
+    display: flex;
+    justify-content: center;
+}
+
+.enlaces-metodologia a {
+    margin: 0px 10px;
+    background: black;
+}
+
+.enlaces-metodologia a:hover {
+    background: #D500F9;
+}
+
+p.pb-5{
+  padding-bottom: 30px;
+}
+
+p.adorno:before {
+    content: url(../img/adorno.png);
+    padding-right: 10px;
+}
+
+p.adorno {
+    margin-left: 20px;
+}
+
+/* Nosotros */
+
+.organizaciones h3 {
+    font-size: 30px;
+}
+
+.organizaciones .logos {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.organizaciones .logos .img-organizacion {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 40px;
+}
+
+.organizaciones .img-organizacion.fci-logo {
+    margin-top: 80px;
+}
+
+.organizaciones .img-organizacion.logo-compromiso img {
+    width: 100%;
+    height: auto;
+}
+
+.img-logo-vertical {
+    height: 60px;
+}
+
+/*Avance*/
+
+.page-style {
+    background: transparent!important;
+    padding-top: 0px!important;
+    height: auto!important;
+}
+
+
+.page-style .chart-total{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 0px!important;
+}
+
+.page-style .chart-total .textototal {
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+    color: black!important;
+}
+
+.page-style .mark-summary{
+  padding-top: 0px!important;
+}
+
+.page-style .mark-summary p{
+  color: black!important;
+}
+
+
+.page-style .title-summary{
+  padding-top: 0px!important;
+}
+
+h2.ng-binding {
+    font-size: 30px;
+    margin: 0px;
+}
+
+.container.btn-anclas-avance.ng-scope {
+    margin-top: 20px;
+}
+
+.row.macro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.row.macro .avancebajada {
+    margin-top: 0px;
+    margin-bottom: 0px!important;
+}
+
+.row.macro .ct-label {
+    margin-top: 0px!important;
+}
+
+.row.macro .vcenter {
+    margin-bottom: 0px;
+    height: auto;
+}
+
+
+#description .ct-series-b .ct-slice-donut {
+    stroke: #D500F9;
+}
+
+#description .ct-label {
+    fill: black;
+    color: #000;
+}
+
+#description .nota p{
+  text-align: center;
+}
+
+.avance-portada{
+  background: #E7E8FF;
+}
+
+.panel-default {
+    border-color: 1px solid #E7E8FF;
+}
+
+.panel.panel-deafult.leyenda {
+    background-color: #E7E8FF;
+}
+
+.panel-default > .panel-heading {
+    color: #000;
+    background-color: #E7E8FF;
+    border-color: #E7E8FF;
+}
+
+.progress-bar {
+    background-color: #36C6E6;
+}
+
+.percentage {
+    font-size: 28px;
+    color: #D500F9;
+}
+
+.btn-anclas-avance a span{
+  background: black;
+  transition: 0.5s all;
+  text-transform: uppercase;
+}
+
+.btn-anclas-avance a:hover span {
+  background: #D500F9;
+}
+
+/*Footer*/
+
+footer a{
+  color: #36C6E6;
+}
+
+footer a:hover{
+  text-decoration: none;
+}
+
+footer .logo-footer {
+    padding: 10px;
+    width: auto;
+    height: auto;
+}
+
+footer .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer i.far.fa-envelope {
+    padding-right: 5px;
+}
+
+.desarrollado-por {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.desarrollado-por img{
+   padding-left: 20px;
+}
+
+footer img{
+  align-self: center;
+}
+
+/* Adaptabilidad Movil*/
+@media screen and (max-width: 991px){
+  div#summary {
+      height: auto!important;
+  }
+  #summary .mark-summary {
+    padding-top: 40px;
+    margin-bottom: 70px;
+}
+.datos-enlaces {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.datos-enlaces p {
+    text-align: left!important;
+}
+#summary .container .row {
+    margin-left: 0px;
+}
+.page-style .title-summary {
+    padding: 40px 0px!important;
+}
+.row.macro{
+  margin-top: 0px;
+}
+h2.ng-binding {
+    font-size: 27px;
+    text-align: center;
+}
+#description h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.page-style .mark-summary {
+    margin-bottom: 0px;
+}
+}
+
+@media screen and (max-width: 770px){
+  .header-menu.sticky ul.nav.navbar-nav.navbar-right {
+      background-color: white;
+  }
+  .organizaciones .img-organizacion img {
+      width: 100%;
+      height: auto;
+  }
+  #description {
+      width: 85%;
+  }
+  .img-organizacion.logo-compromiso {
+    padding: 0px!important;
+    margin: 0px!important;
+}
+#summary .mark-summary {
+    margin-bottom: 60px;
+}
+.page-style .mark-summary {
+    margin-bottom: 0px;
+}
+.btn-anclas-avance a span {
+    color: white!important;
+}
+.jumbotron{
+  height: auto!important;
+  padding-top: 100px;
+}
+
+.jumbotron h2 {
+    font-size: 2em !important;
+}
+
+.jumbotron a{
+  margin-bottom: 100px!important;
+}
+}
+
+
+@media screen and (max-width: 500px){
+.btn-anclas-avance a span {
+    font-size: 0.7em;
+}
+.navbar-header {
+    width: 100% !important;
+    padding: 0px;
+    margin: 10px 0px!important;
+}
+#description {
+    width: 95%;
+}
+}
