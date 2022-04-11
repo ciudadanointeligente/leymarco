@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- og -->
-  <meta property="og:url"           content="http://ninezconstituye.cl" />
+  <meta property="og:url"           content="{{ site.baseurl }}" />
   <meta property="og:type"          content="website" />
   <meta property="og:title"         content="{{ site.title }}" />
   <meta property="og:description"   content="{{ site.description }}" />
@@ -16,17 +16,17 @@
 
   <!--  Anaytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ES8KVYN4W6"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102841648-2"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-ES8KVYN4W6');
+    gtag('config', '{{ site.analytics }}');
   </script>
 
 
-  <link rel="canonical" href="{{ page.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
   <!-- css -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">

@@ -1,20 +1,18 @@
 <div id="summary">
   <div class="container">
-    <div class="row">
-      <div class="col-md-4 col-sm-12">
-      </div>
-      <div class="col-md-8 col-sm-12">
-        <h2 class="text-center white">Avance</h2>
-        <div class="row">
-          <div class="col-md-6 col-sm-12 chart-total chart-summary">
+      <div class="row">
+          <div class="col-12 col-sm-12 col-md-4 chart-total chart-summary">
             <p class="textototal">de avance</p>
           </div>
-          <div class="col-md-6 col-sm-12 mark-summary white">
-              <div class="text-center ct-label white">{{ site.final_mark }}</div>
+          <div class="col-12 col-sm-12 col-md-4 chart-total title-summary">
+            <h2>Cumplimiento de los derechos de la niñez</h2>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 mark-summary white">
+            <div class="text-center ct-label white">{{ site.final_mark }}</div>
             <p class="notatotal text-center">Nota de calidad</p>
           </div>
-        </div>
       </div>
+
       <script>
       var cumplimiento = {{ site.final_percentage }};
       $(function() {
@@ -42,14 +40,14 @@
       });
 
       </script>
-    </div>
   </div>
 </div>
 
 <div id="summary-graphs">
 
 <div class="graphs container" ng-controller="MainController">
-  <h2 class="text-center"> Áreas </h2> </br>
+  <h2 class="text-center title-summary-graphs">Áreas</h2>
+
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-graph">
       <p class="donut"><a href="{{ site.baseurl }}cumplimiento.html#fulfillment-0">Principios, derechos y garantías de NNA </a></p>

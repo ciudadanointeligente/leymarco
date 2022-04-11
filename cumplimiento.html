@@ -1,57 +1,110 @@
 ---
 layout: page
 ---
+<div class="bg-decoration"></div>
 
-<div class="container bg-grey">
-  <section id="fulfillment">
-    <div class="row">
-      <h1 class="text-center">Avance</h1> <br>
-      <div class="col-md-5">
-        <div><p>Infancia es una... Infancia es una... Infancia es una... Infancia es una... Infancia es una... Infancia es una... Infancia es una... Infancia es una...</p>
-        </div>
+<div id="summary" class="page-style">
+  <div class="container" id="description">
+      <div class="row">
+          <div class="col-12 col-sm-12 col-md-12">
+              <h1 class="text-center">Cumplimiento de los derechos de la niñez</h1>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 chart-total chart-summary">
+            <p class="textototal">de avance</p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 chart-total title-summary">
+            <p>Niñez Constituye, a partir de la metodología de Vigilantes por la Infancia, monitorea y evalúa el reconocimiento constitucional de los derechos de niños, niñas y adolescentes en la Convención Constitucional. Para ello, se mide el cumplimiento de la inclusión de los derechos de la niñez en la propuesta de la nueva Constitución. </p>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 mark-summary white">
+            <div class="text-center ct-label white">{{ site.final_mark }}</div>
+            <p class="notatotal text-center">Nota de calidad</p>
+          </div>
       </div>
-      <div class="col-md-4 chart-total">
-        <p class="textototal">de avance</p>
-      </div>
-      <div class="col-md-3">
-          <div class="text-center ct-label">{{site.final_mark}}</div>
-        <p class="notatotal">Nota de calidad</p>
-      </div>
+
       <script>
-        var cumplimiento = {{ site.final_percentage }};
-        $(function() {
-          new Chartist.Pie('.chart-total', {
-            labels: [cumplimiento + "%"," "],
-            series: [100,parseInt(cumplimiento)]
-          }, {
-            donut: true,
-            total:100,
-            donutWidth: 20,
-            startAngle: 0,
-            showLabel: true,
-            labelOffset: -60,
-          }, [
-            ['screen and (max-width: 1199px)', {
-              labelOffset: -68
-            }],
-            ['screen and (max-width: 991px)', {
-              labelOffset: -70
-            }],
-            ['screen and (max-width: 320px)', {
-              labelOffset: -60
-            }]
-          ]);
-        });
+      var cumplimiento = {{ site.final_percentage }};
+      $(function() {
+      new Chartist.Pie('.chart-total', {
+        labels: [cumplimiento + "%"," "],
+        series: [100,parseInt(cumplimiento)]
+      }, {
+        donut: true,
+        total: 100,
+        donutWidth: 15,
+        startAngle: 0,
+        showLabel: true,
+        labelOffset: -60,
+      }, [
+        ['screen and (max-width: 1199px)', {
+          labelOffset: -68
+        }],
+        ['screen and (max-width: 991px)', {
+          labelOffset: -70
+        }],
+        ['screen and (max-width: 320px)', {
+          labelOffset: -60
+        }]
+      ]);
+      });
+
       </script>
-    </div>
-    <div class="container" ng-controller="PromissesController">
-      <!--[[promisses]]-->
-      <ul class="list-inline text-center macroareas">
-        <li ng-repeat="ma in macro_area" class="label-li"><a href="#fulfillment-[[$index]]"><span class="label label-default">[[ma]]</span></a></li>
-      </ul>
-    </div>
-  </section>
+  </div>
 </div>
+
+<!--<div class="container page-style fulfillment">
+  <section id="description">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+              <h1 class="text-center">Cumplimiento de los derechos de la niñez</h1>
+         </div>
+         <div class="col-12 col-sm-12 col-md-3 chart-total">
+              <p class="textototal">de avance</p>
+         </div>
+         <div class="col-12 col-sm-12 col-md-6">
+              <p>Niñez Constituye, a partir de la metodología de Vigilantes por la Infancia, monitorea y evalúa el reconocimiento constitucional de los derechos de niños, niñas y adolescentes en la Convención Constitucional. Para ello, se mide el cumplimiento de la inclusión de los derechos de la niñez en la propuesta de la nueva Constitución. </p>
+         </div>
+         <div class="col-12 col-sm-12 col-md-3 nota">
+             <div class="text-center ct-label">{{site.final_mark}}</div>
+             <p class="notatotal">Nota de calidad</p>
+         </div>
+
+          <script>
+            var cumplimiento = {{ site.final_percentage }};
+            $(function() {
+              new Chartist.Pie('.chart-total', {
+                labels: [cumplimiento + "%"," "],
+                series: [100,parseInt(cumplimiento)]
+              }, {
+                donut: true,
+                total:100,
+                donutWidth: 20,
+                startAngle: 0,
+                showLabel: true,
+                labelOffset: -60,
+              }, [
+                ['screen and (max-width: 1199px)', {
+                  labelOffset: -68
+                }],
+                ['screen and (max-width: 991px)', {
+                  labelOffset: -70
+                }],
+                ['screen and (max-width: 320px)', {
+                  labelOffset: -60
+                }]
+              ]);
+            });
+          </script>
+      </div>
+  </section>
+</div> -->
+
+<div class="container btn-anclas-avance" ng-controller="PromissesController">
+  <!--[[promisses]]-->
+  <ul class="list-inline text-center macroareas">
+    <li ng-repeat="ma in macro_area" class="label-li"><a href="#fulfillment-[[$index]]"><span class="label label-default">[[ma]]</span></a></li>
+  </ul>
+</div>
+
 <section id="fulfillment">
   {% include fulfillment.html %}
 </section>
