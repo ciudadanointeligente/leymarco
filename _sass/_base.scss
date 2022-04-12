@@ -1416,10 +1416,11 @@ display:  none;}}
 .enlaces-metodologia .row div {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .enlaces-metodologia a {
-    margin: 0px 10px;
+    margin: 10px;
     background: black;
 }
 
@@ -1438,6 +1439,42 @@ p.adorno:before {
 
 p.adorno {
     margin-left: 20px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.promess a{
+  color:#36C6E6;
+  font-weight: bold;
+}
+
+.promess a small{
+  font-size: 15px!important;
+}
+
+p.ng-binding {
+    margin-top: 10px;
+}
+
+.promess p.strong {
+    font-size: 16px;
+    margin-top: 0px;
+}
+
+.promess p small {
+    font-size: 13px;
+}
+
+a:focus {
+    outline: 0px auto -webkit-focus-ring-color!important;
+    outline-offset: 0px!important;
+    color: inherit!important;
+}
+
+.promess .col-md-2 {
+    margin-bottom: 20px;
 }
 
 /* Nosotros */
