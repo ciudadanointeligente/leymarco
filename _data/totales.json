@@ -2,13 +2,13 @@
     {
         "id": 1,
         "macro_area": "Principios, derechos y garantías de NNA",
-        "quality_macro_area": "5.295",
-        "fulfillment_macro_area": 41
+        "quality_macro_area": "5.545454545",
+        "fulfillment_macro_area": null
     },
     {
         "id": 2,
         "macro_area": "Órganos institucionales",
-        "quality_macro_area": "5.444",
-        "fulfillment_macro_area": 40
+        "quality_macro_area": "7",
+        "fulfillment_macro_area": null
     }
 ]
