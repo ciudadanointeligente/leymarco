@@ -1,9 +1,9 @@
 # site settings
 title: Niñez Constituye
-email: vigilantesporlainfancia@gmail.com
-description: 'Niñez Constituye es un proyecto de seguimiento...'
+email: observatorio@paralaconfianza.com
+description: 'Monitoreo sobre la inclusión de los derechos de la niñez en la nueva constitución'
 baseurl: '//ninezconstituye.cl/' # the subpath of your site, e.g. /blog/
-url: 'http://ninezconstituye.cl' # the base hostname & protocol for your site
+url: 'https://ninezconstituye.cl' # the base hostname & protocol for your site
 # analytics: 'G-ES8KVYN4W6' # google analytics tracking code
 launched: true
 # build settings
