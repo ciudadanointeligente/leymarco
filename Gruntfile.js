@@ -160,6 +160,8 @@ console.log("nada")
 
 
     });
-    grunt.registerTask("UpdateEverything", ['UpdateData', 'gitadd', 'gitcommit', 'gitpull', 'gitpush'])
+    grunt.registerTask("UpdateEverything", ['gitadd', 'gitcommit', 'gitpull', 'gitpush'])
 
 };
+
+/** Temporalmente está borrado 'UpdateData' del registerTask de grunt para que suba sólo los json  **/
